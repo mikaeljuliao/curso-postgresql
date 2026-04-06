@@ -1,0 +1,152 @@
+<!--
+02:11 - Teoria: Como os dados eram armazenados e surgimento dos Bancos de Dados
+
+Antes de iniciar o estudo de banco de dados, é importante entender como os dados eram armazenados no passado.
+
+Nas décadas de 60 e 70, não existiam bancos de dados relacionais como conhecemos hoje. As informações eram armazenadas fisicamente, em grandes armários com gavetas e pastas.
+
+Exemplo de organização da época:
+- Armário → representava o "banco de dados"
+- Pastas → representavam "tabelas"
+- Papéis → representavam os "registros"
+
+Dentro desses armários, empresas guardavam informações de clientes, funcionários, fornecedores, entre outros.
+
+Problemas desse modelo:
+- Limitação de espaço físico
+- Dificuldade de organização
+- Baixa eficiência para busca de informações
+- Risco de perda de dados
+
+Com o crescimento da quantidade de informações, surgiu a necessidade de armazenar dados de forma digital.
+
+Foi então que surgiram:
+- Sistemas de banco de dados
+- Modelos relacionais
+- A linguagem SQL
+
+Inicialmente, esses bancos funcionavam de forma local (offline), armazenados em computadores. Com o tempo, evoluíram para sistemas conectados à internet (web).
+
+Fazendo uma analogia com o modelo antigo:
+- Armário = Banco de Dados
+- Pastas = Tabelas
+- Papéis = Registros (linhas)
+
+Exemplo prático:
+Se uma empresa quiser armazenar fornecedores e funcionários:
+- Teríamos uma tabela "fornecedores"
+- Teríamos uma tabela "funcionarios"
+- Cada tabela conteria vários registros
+
+
+--------------------------------------------------
+
+05:05 - O que é a linguagem SQL e como ela funciona?
+
+SQL (Structured Query Language) significa "Linguagem de Consulta Estruturada".
+
+É uma linguagem utilizada para se comunicar com bancos de dados.
+
+Ela é considerada "universal" porque:
+- A estrutura dos comandos é praticamente a mesma em diferentes bancos (PostgreSQL, MySQL, etc.)
+- Pode ser usada em diferentes tipos de aplicações (web, mobile, desktop)
+
+Com SQL é possível:
+- Criar dados (CREATE)
+- Inserir dados (INSERT)
+- Consultar dados (SELECT)
+- Atualizar dados (UPDATE)
+- Deletar dados (DELETE)
+
+Ou seja, ela permite controlar completamente um banco de dados.
+
+Aprendendo SQL, você consegue trabalhar com praticamente qualquer tecnologia que utilize banco de dados.
+
+
+--------------------------------------------------
+
+Estrutura de um Banco de Dados
+
+Um banco de dados é organizado em tabelas, e cada tabela contém registros.
+
+Visualização da estrutura:
+
+Banco de Dados
+│
+├── Tabela: funcionarios
+│   ├── Registro
+│   ├── Registro
+│   └── Registro
+│
+├── Tabela: vendas
+│   ├── Registro
+│   ├── Registro
+│   └── Registro
+│
+└── Tabela: fornecedores
+    ├── Registro
+    ├── Registro
+    └── Registro
+
+Ou seja:
+- Um banco pode ter várias tabelas
+- Cada tabela possui vários registros (linhas)
+
+
+--------------------------------------------------
+
+Exemplo de Tabela (usuarios)
+
+Tabela: usuarios
+
+| nome             | nascimento  | sexo | pais    |
+|------------------|------------|------|---------|
+| João Pedro       | 07/09/1991 | M    | Brasil  |
+| Maria da Silva   | 20/12/1997 | F    | Espanha |
+| Cleber Duarte    | 08/07/1984 | M    | EUA     |
+
+
+--------------------------------------------------
+
+Entendendo melhor a tabela
+
+Uma tabela é composta por:
+
+1. Colunas (Campos)
+São as categorias de informação:
+- nome
+- nascimento
+- sexo
+- pais
+
+Também chamadas de "campos" da tabela.
+
+2. Linhas (Registros)
+São os dados armazenados:
+- João Pedro, 07/09/1991, M, Brasil
+- Maria da Silva, 20/12/1997, F, Espanha
+
+Cada linha representa um registro completo dentro da tabela.
+
+Resumo:
+- Colunas = tipo de informação (campos)
+- Linhas = dados armazenados (registros)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+09:11 - O que é um SGBD (Sistema de Gerenciamento de Banco de Dados)?
+O SG
+-->
