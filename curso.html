@@ -3,7 +3,8 @@
 
 Antes de iniciar o estudo de banco de dados, é importante entender como os dados eram armazenados no passado.
 
-Nas décadas de 60 e 70, não existiam bancos de dados relacionais como conhecemos hoje. As informações eram armazenadas fisicamente, em grandes armários com gavetas e pastas.
+Nas décadas de 60 e 70, não existiam bancos de dados relacionais como conhecemos hoje. As informações eram armazenadas 
+fisicamente, em grandes armários com gavetas e pastas.
 
 Exemplo de organização da época:
 - Armário → representava o "banco de dados"
@@ -25,7 +26,8 @@ Foi então que surgiram:
 - Modelos relacionais
 - A linguagem SQL
 
-Inicialmente, esses bancos funcionavam de forma local (offline), armazenados em computadores. Com o tempo, evoluíram para sistemas conectados à internet (web).
+Inicialmente, esses bancos funcionavam de forma local (offline), armazenados em computadores. Com o tempo, 
+evoluíram para sistemas conectados à internet (web).
 
 Fazendo uma analogia com o modelo antigo:
 - Armário = Banco de Dados
@@ -40,6 +42,16 @@ Se uma empresa quiser armazenar fornecedores e funcionários:
 
 
 --------------------------------------------------
+
+
+
+
+
+
+
+
+
+
 
 05:05 - O que é a linguagem SQL e como ela funciona?
 
@@ -148,5 +160,166 @@ Resumo:
 
 
 09:11 - O que é um SGBD (Sistema de Gerenciamento de Banco de Dados)?
-O SG
+
+SGBD vem do inglês Database Management System (DBMS), que significa Sistema de Gerenciamento de Banco de Dados.
+
+É um software responsável por gerenciar bancos de dados.
+
+Seu principal objetivo é:
+- Gerenciar acessos
+- Armazenar informações
+- Organizar dados
+- Manipular dados
+- Permitir importação e exportação
+
+Basicamente, é um software que fornece uma interface mais amigável para gerenciar o banco de dados.
+
+
+Importante entender:
+
+Nós temos a linguagem SQL, que é usada para criar bancos de dados, tabelas e registros.
+
+Porém, não conseguimos utilizar SQL “puro” sem um SGBD.
+
+O SGBD é o sistema que permite executar esses comandos na prática.
+
+Ou seja:
+- SQL = linguagem
+- SGBD = sistema que executa essa linguagem
+
+
+Na prática:
+
+Criamos o banco de dados dentro do SGBD, e através dele podemos utilizar esses dados em aplicações:
+
+- Web
+- Mobile
+- Desktop
+- Android / iOS
+
+O SGBD é o ambiente onde tudo acontece.
+
+
+O que podemos fazer dentro de um SGBD:
+
+- Criar bancos de dados
+- Criar tabelas
+- Inserir e gerenciar dados (clientes, fornecedores, etc.)
+- Fazer backup
+- Importar e exportar dados
+- Gerenciar usuários e permissões (acesso, senha, etc.)
+
+Ou seja, ele cuida de todo o gerenciamento dos dados.
+
+
+Principais SGBDs do mercado:
+
+- Oracle (empresa Oracle)
+- MySQL (também da Oracle)
+- SQL Server (da Microsoft)
+- PostgreSQL (código aberto)
+
+
+Sobre o PostgreSQL:
+
+O sistema escolhido no curso é o PostgreSQL.
+
+Ele é:
+- Gratuito
+- Open source (código aberto)
+- Muito utilizado no mercado
+- Bastante usado por empresas e startups
+
+
+
+Resumo:
+- SQL = linguagem usada para se comunicar com o banco
+- SGBD = sistema que executa essa linguagem e gerencia os dados
+
+Importante:
+- Cada SGBD pode ter pequenas diferenças, mas a base do SQL é praticamente a mesma em todos.
+- Por isso, aprendendo um (como PostgreSQL), você consegue se adaptar facilmente a outros.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13:04 - Download e instalação do PostgreSQL no Windows
+
+Para baixar o PostgreSQL, primeiro precisamos acessar o site oficial.
+
+Pesquisando no navegador por "PostgreSQL", iremos acessar:
+https://www.postgresql.org/
+
+Dentro do site:
+
+- Clique no botão de download
+- Escolha o sistema operacional Windows
+
+Após isso, serão exibidas as versões disponíveis.
+
+Devemos clicar na opção de baixar o instalador e escolher a versão mais recente para Windows.
+
+
+Instalação:
+
+Após o download:
+
+- Localize o arquivo na pasta
+- Execute como administrador
+
+O processo de instalação será iniciado automaticamente.
+
+
+Durante a instalação:
+
+- Clique em "Next" e mantenha todas as configurações padrão
+
+Em um momento, será solicitado:
+
+Criação da senha do superuser (usuário administrador do banco de dados)
+
+Importante:
+
+- Essa senha será usada para acessar o banco de dados posteriormente
+- É muito importante não esquecer essa senha
+
+Caso perca ou esqueça a senha, será necessário reinstalar o PostgreSQL.
+
+
+Configurações finais:
+
+- Porta padrão: 5432  
+  (Pode manter essa porta e alterar depois, se necessário)
+
+- Cluster: deixar como "default"
+
+Depois disso:
+
+- Clique em "Next"
+- Finalize a instalação
+
+
+Resumo:
+
+- Baixar no site oficial
+- Instalar mantendo padrão
+- Definir senha do superuser
+- Manter porta 5432
+- Finalizar instalação
+
+
+
+18:59 - Acessando e conhecendo a interface do pgAdmin 4
+
+
 -->
